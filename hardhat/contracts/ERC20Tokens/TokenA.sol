@@ -16,7 +16,7 @@ contract TokenA is ERC20, Ownable {
     /**
     * @notice Mint 1000 tokens to the owner
     */
-    constructor() ERC20("Token A", "TKA") { 
+   constructor() ERC20("Token A", "TKA") { 
         _mint(msg.sender, 1000 ether);
     }
 
@@ -25,6 +25,6 @@ contract TokenA is ERC20, Ownable {
     * @param _amount The amount of tokens to mint
     */
     function mint(uint256 _amount) external {
-        _mint(msg.sender, _amount);
+             _mint(msg.sender, _amount);
     }
 }
